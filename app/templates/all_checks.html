@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Checks for {{ system_name }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        All Checks for {{ system_name }}
+    </header>
+    <main>
+        <ul>
+            {% for check in checks %}
+                <li>{{ check.timestamp }}: <span class="status {{ check.status }}"></span></li>
+            {% endfor %}
+        </ul>
+    </main>
+    <footer>
+        <div class="legend">
+            <span class="status green"></span> System is healthy
+            <span class="status red"></span> System is down
+            <span class="status yellow"></span> Check was not possible
+        </div>
+    </footer>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
