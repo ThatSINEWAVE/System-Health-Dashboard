@@ -1,4 +1,4 @@
-# System Health Dashboard
+# System Health Dashboard ( Proof of Concept )
 
 This repository houses a Flask-based web application designed to monitor and display the health status of various systems. It includes a set of Python scripts for checking system health, HTML templates for displaying the status, JavaScript for interactive elements, and a CSS file for styling.
 
