@@ -9,6 +9,8 @@ This repository houses a Flask-based web application designed to monitor and dis
 - **Historical Data View**: Access to historical check data for each system, allowing for trend analysis and troubleshooting.
 - **Customizable Check Intervals**: Ability to set the frequency of health checks as per requirement.
 
+## ☕ [Support my work on Ko-Fi](https://ko-fi.com/thatsinewave)
+
 ## Setup
 
 1. **Dependencies**: Ensure you have Flask and other required packages installed.
